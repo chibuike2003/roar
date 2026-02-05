@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ROAR HUB NIGERIA | Innovation Redefined</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ROAR HUB NIGERIA, Tech Hub, UNN, Startup Incubation">
+
+    <link rel="icon" href="img/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons & Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #06A3DA;
+            --dark-blue: #091E3E;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #444;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .navbar-brand {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+        }
+
+        /* Spinner */
+        #spinner {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity .4s ease;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: var(--dark-blue) !important;
+            padding: 15px 0;
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,.85) !important;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+
+        /* Hero Carousel */
+        .carousel-item {
+            height: 90vh;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            opacity: .65;
+        }
+
+        .carousel-caption {
+            bottom: 25%;
+        }
+
+        /* Cards */
+        .drive-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid #eee;
+            transition: .4s;
+            height: 100%;
+        }
+
+        .drive-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,.1);
+            border-color: var(--primary);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Team */
+        .team-item {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: .4s;
+            border: 1px solid #eee;
+        }
+
+        .team-item:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,.1);
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item { height: 70vh; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Spinner -->
+<div id="spinner">
+    <div class="spinner-border text-primary" style="width:3rem;height:3rem;"></div>
+</div>
+
+<!-- Top Bar -->
+<div class="container-fluid bg-dark text-light px-5 d-none d-lg-block">
+    <div class="row align-items-center" style="height:45px">
+        <div class="col-lg-8">
+            <small><i class="fa fa-map-marker-alt me-2"></i>UNN, Nsukka</small>
+            <small class="ms-4"><i class="fa fa-phone-alt me-2"></i>+234 803 316 4062</small>
+        </div>
+        <div class="col-lg-4 text-end">
+            <a class="btn btn-sm btn-outline-light rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-sm btn-outline-light rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-sm btn-outline-light rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <h2 class="m-0 text-white"><span class="text-primary">ROAR</span> HUB</h2>
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#drive">Drive</a>
+                <a class="nav-link" href="#team">Team</a>
+            </div>
+            <a href="signup.html" class="btn btn-primary rounded-pill px-4 ms-lg-3">Get Started</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Carousel -->
+<div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="logo.jpg" class="w-100" alt="">
+            <div class="carousel-caption">
+                <h5 class="text-primary text-uppercase">Welcome to the Future</h5>
+                <h1 class="display-1 text-white">Innovate, Create & Roar</h1>
+                <p class="fs-5">Empowering West Africa’s next tech leaders</p>
+                <a href="signup.html" class="btn btn-primary btn-lg rounded-pill px-5">Join Hub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+<section id="about" class="py-5">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h5 class="text-primary text-uppercase">Who We Are</h5>
+                <h1 class="display-5">1st University Embedded Hub in West Africa</h1>
+                <p class="lead">A vibrant innovation ecosystem within UNN.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="ruar.jpg" class="img-fluid rounded-4 shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Drive -->
+<section id="drive" class="bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="drive-card">
+                    <div class="icon-box"><i class="fa fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>Home-grown tech solutions with global impact.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="drive-card">
+                    <div class="icon-box"><i class="fa fa-rocket"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>Empowering entrepreneurs through innovation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="team" class="py-5 bg-white">
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h5 class="text-primary text-uppercase fw-bold">Leadership</h5>
+            <h1 class="display-6">Meet The Visionaries</h1>
+        </div>
+
+        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="team-item shadow-sm rounded overflow-hidden">
+                                <img src="b.jpg" class="w-100" style="height:350px; object-fit:cover" alt="Prof Benjamin C Ozumba" loading="lazy">
+                                <div class="p-4 text-center bg-light">
+                                    <h4 class="text-primary">Prof Benjamin C Ozumba</h4>
+                                    <p class="text-muted mb-0">Board Chairman & Co-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="team-item shadow-sm rounded overflow-hidden">
+                                <img src="f.jpg" class="w-100" style="height:350px; object-fit:cover" alt="Team Member" loading="lazy">
+                                <div class="p-4 text-center bg-light">
+                                    <h4 class="text-primary">Akwara Chinedum </h4>
+                                    <p class="text-muted mb-0">Incubation Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+            <div class="carousel-indicators position-relative mt-4">
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active bg-primary" aria-current="true"></button>
+                <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" class="bg-primary"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Styling the arrows to be visible on white background */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    .team-item {
+        transition: transform 0.3s ease;
+    }
+    .team-item:hover {
+        transform: translateY(-10px);
+    }
+</style>
+<!-- Footer -->
+<footer class="bg-dark text-light py-5 text-center">
+    <p class="mb-0">&copy; 2026 ROAR HUB NIGERIA — Innovation Redefined</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const spinner = document.getElementById("spinner");
+        spinner.style.opacity = "0";
+        setTimeout(() => spinner.remove(), 400);
+    });
+</script>
+
+</body>
+</html>
